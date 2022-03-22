@@ -1,0 +1,16 @@
+spring:
+  data:
+    mongodb:
+      database: webclip-db
+      uri: mongodb://root:example@localhost:27017
+security:
+  jwt:
+    issuer: webclip
+    secret: sample-secret
+    validity: 1
+logging:
+  level:
+    org.mongodb: DEBUG
+#    org.springframework.data.mongodb:
+#      core.MongoTemplate: DEBUG
+#      repository.query: DEBUG
